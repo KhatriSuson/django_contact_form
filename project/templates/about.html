@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>ab0ut page</h2>
+    <h3>helo</h3>
+    {% for abouts in about %}
+        <!-- {{ abouts }} -->
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">{{ abouts.title }}</h4>
+            <p>description:{{ abouts.dis }}</p>
+        {% endfor %}
+    </div>
+{% endblock content %}

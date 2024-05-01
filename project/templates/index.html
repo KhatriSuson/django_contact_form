@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+  <!-- <div class="container">
+    <img src="image/about-img.png" alt="not found" width="200px" height="200px">
+  </div> -->
+  <h1>CONTACT FORM</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="name">Name</label>
+      <input type="text" name="name" class="form-control" id="name" rows="3">
+    </input>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input name="email"
+           type="email"
+           class="form-control"
+           id="exampleFormControlInput1"
+           placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1">Subject</label>
+    <textarea name="subject"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"></textarea>
+  </div>
+  <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+<!-- Optional form -->
+<!-- <div class="container">
+    <form action="">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input name="name" type="text" id="fname" placeholder="Enter your name">
+        <br>
+        <label for="email">Email:</label>
+        <input name="email" type="email" id="email" placeholder="Enter Your mail.">
+        <br>
+        <label for="subject">Subject:</label>
+        <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <br>
+                <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
+    </form>
+  </div> -->
+<!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+{% endblock content %}
